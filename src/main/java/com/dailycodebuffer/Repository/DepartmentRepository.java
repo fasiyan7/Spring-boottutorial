@@ -8,5 +8,5 @@ import com.dailycodebuffer.entity.Department;
 
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
-
+	public Department findByDepartmentname(String departmentname);
 }
